@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-1.9.1.min.js"></script>
+    <script>
+        $(window).ready(function () {
+            $("#v").emoji(doalert);
+            function doalert(element) {
+                // console.log($(element).html())
+                alert($(element).html())
+            }
+
+        })
+
+        $.fn.emoji = function (fn) {
+            var emoji = "😀😃😄😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗😚😙🥲😋😛😜🤪😝🤑🤗🤭🤫🤔🤐🤨😐😑😶😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐😕😟🙁😮😯😲😳🥺😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬😈👿💀☠*🤡👹👺👻👽👾🤖😺😸😹😻😼😽🙀😿😾🙈🙉🙊💋💌💘💝💖💗💓💞💕💟❣💔❤🧡💛💚💙💜🤎🖤🤍💯💢💥💫💦💨🕳💣💬👁🗨🗯💭💤🤚🖐✋🖖👌🤌🤏✌🤞🤟🤘🤙👈👉👆🖕👇☝👍👎✊👊🤛🤜👏🙌👐🤲🤝🙏✍💅🤳💪🦾🦿🦵🦶👂🦻🧠🫀🫁🦷🦴👀👅👄👶🧒👦👧🧑👱👨🧔👩🧓👴👵🙍🙎🙅🙆💁🙋🧏🙇🤦🤷👮🕵💂🥷👷🤴👸👳👲🧕🤵👰🤰🤱👼🎅🤶🦸🦹🧙🧚🧛🧜🧝🧞🧟💆💇🚶🧍🧎🏃💃🕺🕴👯🧖🧗🤺🏇⛷🏂🏌🏄🚣🏊⛹🏋🚴🚵🤸🤼🤽🤾🤹🧘🛀🛌👭👫👬💏💑👪🗣👤👥🫂👣🐵🐒🦍🦧🐕🦮🦺🐩🐺🦊🦝🐱🐈⬛🦁🐯🐅🐆🦄🦓🦌🦬🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦣🦏🦛🐭🐁🐀🐹🐰🐇🐿🦫🦔🦇❄🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🕊🦅🦆🦢🦉🦤🪶🦩🦚🦜🐸🐊🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐡🦈🐙🐚🐌🦋🐜🐝🪲🐞🦗🪳🕷🕸🦂🦟🪰🪱🦠💐🌸💮🏵🌹🥀🌺🌻🌼🌷🌱🪴🌲🌳🌴🌵🌾🌿☘🍀🍁🍂🍃🌍🌎🌏🌐🗺🗾🧭🏔⛰🌋🗻🏕🏖🏜🏝🏞🏟🏛🏗🧱🪨🪵🛖🏘🏚🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗽⛪🕌🛕🕍⛩🕋⛲⛺🌁🌃🏙🌄🌅🌆🌇🌉♨🎠🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎🏍🛵🦽🦼🛺🚲🛴🛹🛼🚏🛣🛤🛢⛽🚨🚥🚦🛑🚧⚓⛵🛶🚤🛳⛴🛥🚢✈🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🚀🛸🛎🧳⌛⏳⌚⏰⏱⏲🕰🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡☀🌝🌞🪐⭐🌟🌠🌌☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌀🌈🌂☂☔⛱⚡☃⛄☄💧🌊🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫🎖🏆🏅🥇🥈🥉⚾🥎🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸🎣🤿🎽🎿🛷🥌🎯🪀🪁🎱🔮🪄🧿🎮🕹🎰🎲🧩🧸🪅🪆♠♥♦♣♟🃏🀄🎴🎭🖼🎨🧵🪡🧶🪢👓🕶🥽🥼👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍🎒🩴👞🥾🥿👠👡🩰👢👑👒🎩🎓🧢🪖⛑📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙🎚🎛🎤🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲☎📞📟📠🔋🔌💻🖥🖨⌨🖱🖲💽💾💿📀🧮🎥🎞📽🎬📺📷📸📹📼🔍🔎🕯🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞📑🔖🏷💰🪙💴💵💶💷💸💳🧾💹✉📧📨📩📤📥📦📫📪📬📭📮🗳✏✒🖋🖊🖌🖍📝💼📁📂🗂📅📆🗒🗓📇📈📉📊📋📍📎🖇📏📐✂🗃🗄🗑🔒🔓🔏🔐🔑🗝🪓⛏⚒🛠🗡⚔🪃🏹🛡🪚🔧🪛🔩⚙🗜⚖🦯🔗⛓🪝🧰🧲🪜⚗🧪🧫🧬🔬🔭📡🩸💊🩹🩺🚪🛗🪞🪟🛏🛋🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🪥🧽🧯🛒🚬⚰🪦⚱🗿🪧"
+            var sd = [];
+            var index_p = 0;
+            for (let name of emoji) {
+                if (name != " ") {
+
+                    if (!sd.includes(name)) {
+                        sd.push(name);
+                    }
+
+                }
+            }
+
+            var emojiBox = function (obj) {
+                $(obj).css({ "min-width": "360px" })
+                var toolbar = $('<div'
+                    + ' style="color:#eee;font-size:blod; display:grid;grid-template-columns: 80px 1fr 80px; background-color:blueviolet;height:60px;width:100%;align-items: center;justify-content: center;text-align: center;">'
+
+                    + '</div>').appendTo(obj);
+                var prevBtn = $('<div><svg width="40" height="40" viewBox="0 0 360 360" fill="#eee">'
+                    + '<path'
+                    + ' d="m186.5215,90.8695c27.535,0 55.072,0 82.608,0c-0.839,1.159 -1.508,2.503 -2.54,3.454c-26.046,23.97 -52.127,47.9 -78.208,71.833c-5.102,4.681 -10.228,9.337 -15.459,14.111c4.328,3.644 7.964,6.486 11.355,9.599c16.142,14.822 32.276,29.653 48.297,44.605c12.275,11.457 24.377,23.1 36.556,34.659c-27.536,0 -55.073,0 -82.608,0c-31.884,-28.984 -63.769,-57.972 -95.653,-86.957c0,-0.724 0,-1.45 0,-2.174c9.43,-8.35 18.925,-16.627 28.275,-25.066c15.919,-14.371 31.889,-28.692 47.548,-43.34c6.971,-6.521 13.24,-13.792 19.829,-20.724z"'
+                    + 'clip-rule="evenodd" fill-rule="evenodd" id="svg_3" />'
+                    + '</svg></div>').prependTo(toolbar).on("click", function () {
+                        if (index_p > 0) {
+                            mainBox.empty();
+                            index_p--;
+                            numberView.html(index_p + 1 + "/" + Math.ceil(sd.length / 40))
+                            for (i = 40 * index_p; i < 40 * (index_p + 1) && i < sd.length; i++) {
+                                $('<div style="font-size:32px;line-height:60px;">' + sd[i] + '</div>').appendTo(mainBox).on("click", function () {
+                                    fn(this)
+                                })
+
+                            }
+                        }
+
+                    });
+                var numberView = $('<div></div>').appendTo(toolbar);
+                var nextBtn = $('<div><svg width="40" height="40" viewBox="0 0 360 360" fill="#eee">'
+                    + '<path'
+                    + ' d="m174.3115,271.644c-24.216,0 -48.431,0.05 -72.644,-0.096c-1.867,-0.012 -3.726,-1.396 -5.589,-2.14c30.396,-29.416 60.791,-58.832 91.647,-88.692c-21.736,-21.602 -41.373,-41.214 -61.132,-60.707c-10.059,-9.921 -20.336,-19.62 -30.515,-29.418c1.863,-0.744 3.722,-2.128 5.589,-2.139c24.213,-0.146 48.428,-0.096 72.644,-0.096c12.397,13.505 24.437,27.362 37.279,40.428c17.132,17.432 34.89,34.253 52.331,51.29c-8.748,9.511 -16.229,18.161 -24.253,26.271c-21.662,21.889 -43.555,43.549 -65.357,65.299z"'
+                    + 'clip-rule="evenodd" fill-rule="evenodd" id="svg_3" />'
+                    + '</svg>'
+                    + '</div>').appendTo(toolbar).on("click", function () {
+                        if (index_p < Math.ceil(sd.length / 40) - 1) {
+                            mainBox.empty();
+                            index_p++;
+                            numberView.html(index_p + 1 + "/" + Math.ceil(sd.length / 40))
+                            for (i = 40 * index_p; i < 40 * (index_p + 1) && i < sd.length; i++) {
+                                $('<div style="font-size:32px;line-height:60px;">' + sd[i] + '</div>').appendTo(mainBox).on("click", function () {
+                                    fn(this)
+                                })
+
+                            }
+
+                        }
+                    });
+                var mainBox = $('<div style="display: grid;grid-template-columns: repeat(auto-fill, minmax(12.5%, 1fr)) ;justify-content: center; align-items: center;text-align: center;"></div>').appendTo(obj);
+                for (i = 0; i < 40; i++) {
+                    $('<div style="font-size:32px;line-height:60px;">' + sd[i] + '</div>').appendTo(mainBox).on("click", function () {
+                        fn(this)
+                    })
+                    numberView.html(index_p + 1 + "/" + Math.ceil(sd.length / 40))
+
+                }
+            }
+            return $(this).each(function () {
+                emojiBox($(this));
+            })
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="v"></div>
+
+
+</body>
+
+</html>
